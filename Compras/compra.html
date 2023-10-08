@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompraEnEspejismo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html" target="_blank"><img id="Logo"
+          src="../Img2/IMG_20200918_205736_364.png" class="rounded-circle" alt="Flor" width="80px" /></a>
+      <a class="navbar-brand" href="../index.html" target="_blank">ElEspejismo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Eventos y Talleres</a>
+          <a class="nav-link " href="#">Autores</a>
+          <a class="nav-link ">Unete al Espejismo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+  <!-- Options -->
+  <article class="container-fluid mt-4" style="width: 65%">
+    <div class="d-flex justify-content-around text-center">
+      <div class="p-3 btn-danger bg-opacity-10 border border-info border-start-0 rounded-end">
+        <p class="option">Escritores</p>
+        <p class="have">Tienen un descuento</p>
+        <p class="discount">80%</p>
+        <p class="doc">* colaborando con un escrito</p>
+      </div>
+      <div class="p-3 bg-dark bg-opacity-10 border border-info border-start-0 rounded-end">
+        <p class="option">Docentes y Estudiantes</p>
+        <p class="have">Tienen un descuento</p>
+        <p class="discount">50%</p>
+        <p class="doc">* presentar documentación</p>
+      </div>
+      <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+        <p class="option">Guardias de Seguridad</p>
+        <p class="have">Tienen un descuento</p>
+        <p class="discount">15%</p>
+        <p class="doc">* presentar documentación</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Form -->
+  <div class="container mt-4" style="width: 65%">
+    <p class="card-text text-center">Asociate</p>
+    <h2 class="card-title text-center">VALOR DE ABONO MENSUAL 890$</h2>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+      </div>
+    </div>
+
+    <div class="form-floating mt-3">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="email">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Quantity & Category -->
+  <div class="container mt-4" style="width: 65%">
+    <div class="row">
+      <div class="col">
+        <p>Arrastra aqui tu documentación</p>
+      </div>
+      <div class="col">
+        <p>Categoria</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input id="quantity" type="text" class="form-control" placeholder="documentación">
+      </div>
+      <div class="col">
+        <select id="category" class="form-select">
+          <option class="dropdown-menu">Seleccionar</option>
+          <option>Escritores</option>
+          <option>Docentes y Estudiantes</option>
+          <option>Guardias de Seguridad</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Total Bar -->
+  <div class="container form-floating mt-3 text-primary" style="width: 65%">
+    <div class="col">
+      <text id="totales" type="text" class="form-control bg-info">Total a Pagar: $</text>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="container d-flex justify-content-between text-center mt-4" style="width: 65%">
+    <button onclick="window.location.reload()" class="btn col-5" type="button" id="formErase">Borrar</button>
+    <button onclick="myFunction()" class="btn col-5" type="button" id="formSummary">Pagar</button>
+  </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container mt-2">
+    <ul class="navbar bg-dark justify-content-center list-unstyled mt-4" id="footer">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Preguntas Frecuentes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Contáctanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Términos y Condiciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Privacidad</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
