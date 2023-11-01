@@ -90,14 +90,14 @@
     </div>
     <div class="row">
       <div class="col">
-        <input id="quantity" type="text" class="form-control" placeholder="documentación">
+        <input id="documentacion" type="text" class="form-control" placeholder="documentacion">
       </div>
       <div class="col">
         <select id="category" class="form-select">
           <option class="dropdown-menu">Seleccionar</option>
-          <option>Escritores</option>
-          <option>Docentes y Estudiantes</option>
-          <option>Guardias de Seguridad</option>
+          <option value="escritores">Escritores</option>
+          <option value="docentesYEstudiantes">Docentes y Estudiantes</option>
+          <option value="guardiasDeSeguridad">Guardias de Seguridad</option>
         </select>
       </div>
     </div>
@@ -112,8 +112,14 @@
 
   <!-- Buttons -->
   <div class="container d-flex justify-content-between text-center mt-4" style="width: 65%">
-    <button onclick="window.location.reload()" class="btn col-5" type="button" id="formErase">Borrar</button>
-    <button onclick="myFunction()" class="btn col-5" type="button" id="formSummary">Pagar</button>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn text-white fs-6 btnBorrar" style="background-color: #96c93e;"
+          type=" button" id="borrar">Borrar</button>
+  </div>
+    
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn text-white fs-6 btnResumen" style="background-color: #96c93e;"
+          type=" button" id="resumen">Resumen</button>
   </div>
   </div>
   </div>
@@ -135,6 +141,7 @@
       </li>
     </ul>
   </div>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
